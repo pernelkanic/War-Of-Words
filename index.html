@@ -7,11 +7,18 @@
     <link rel="stylesheet" href="./Css/index.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <script src="index.js"></script>
     <title>War Of Words</title>
+    
 </head>
-<body>
-    <nav class="stroke">
+
+<body >
+    <div style="display: none" id="hideAll">&nbsp;</div>
+
+    <div class="toppage" >
+      <nav class="stroke">
         <img src="./Assets/wowlogo.png" class="wowlogo" alt="">
         <ul>
           <li><a href="#">Home</a></li>
@@ -20,25 +27,43 @@
           <li><a href="#">Schedule</a></li>
           <li><div class="button text">Register</div></li>
         </ul>
-      </nav>
-      <div class="body-container">
+    </nav>
+    <div class="body-container">
+        <!-- <div class="logo-container">
+            <img src="./Assets/atriumlogo.png"  alt="">
+            <img src="./Assets/reclogo.png" width="200px" height="200px">
+            <img src="./Assets/dulogo.png" alt="">
+        </div> -->
         <div class="bodytitle-container">
             <img src="./Assets/wowlogo.png" alt="">
             <p id="wowpara">
-                   
+                
             </p>
+            
         </div>
+       
+        
         <div class="date-box" id="">
-             <p id="countdown" ></p>
-    </div>  
+            <p id="countdown" ></p>
+        </div>  
     </div>
-      
+   
+
+    </div>
     
 </body>
+
 <script>
     var typed = new Typed('#wowpara', {
-      strings: ["war <span style='color:#8DC63F'>of</span> words"],
-      typeSpeed: 50,
+        strings: ["war <span style= 'color:#8DC63F'>of</span> words '24 "],
+        typeSpeed: 50,
     });
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $("nav");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
+   
   </script>
 </html>
