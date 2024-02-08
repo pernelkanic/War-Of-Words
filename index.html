@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="./Css/index.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://kit.fontawesome.com/a59b9b09ab.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <script src="index.js"></script>
@@ -19,44 +23,160 @@
 
     <div class="toppage" >
       <nav class="stroke">
-        <img src="./Assets/wowlogo.png" class="wowlogo" alt="">
-        <ul>
+        <!-- <img src="./Assets/wowlogo.png" class="wowlogo" alt=""> -->
+        <!-- <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Events</a></li>
           <li><a href="#">Schedule</a></li>
           <li><div class="button text">Register</div></li>
-        </ul>
-    </nav>
+        </ul> -->
+        
+        <img src="./Assets/atriumlogo.png" width="100rem" height="100rem" style="margin-top: 5px;" alt="">
+        <img src="./Assets/reclogo.png" width="250rem" alt="">
+        <img src="./Assets/dulogo.png" width="100rem" alt="">
+      
+      </nav>
     <div class="body-container">
         <!-- <div class="logo-container">
             <img src="./Assets/atriumlogo.png"  alt="">
             <img src="./Assets/reclogo.png" width="200px" height="200px">
             <img src="./Assets/dulogo.png" alt="">
         </div> -->
+        <div class="title-regcont">
         <div class="bodytitle-container">
-            <img src="./Assets/wowlogo.png" alt="">
+            <img src="./Assets/wowsmall.png" alt="">
             <p id="wowpara">
-                
             </p>
-            
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-6 regbtn"> <a href="#" class="btn btn-sm animated-button thar-threereg btn">Register</a> </div>
         </div>
-       
-        
-        <div class="date-box" id="">
+          <div class="date-box" id="">
             <p id="countdown" ></p>
         </div>  
     </div>
-   
-
+  </div>
+    <div class="abt-container">
+      <div class="job-card">
+        <p>What?</p>
+        <br>
+        <p>War of Words (WoW) is the annual intercollegiate literary fest of Atrium and Debating Union of Rajalakshmi Engineering College. WoW consists of various exciting events. So, come on, express yourself and win exciting prizes!</p>
     </div>
-    
+    <div class="job-card">
+      <p>Where?</p>
+      <br>
+      <p>Rajalakshmi Engineering College, Rajalakshmi Nagar, Thandalam, Chennai - 602 105.</p>
+  </div>
+  <div class="job-card">
+    <p>When?</p>
+    <br>
+    <p>Monday, 26th February, 2024</p>
+</div>
+    </div>
+    <div class="cover">
+      <button class="left" id="button" onclick="leftScroll()">
+        <i class="fas fa-angle-double-left"></i>
+      </button>
+      <div class="scroll-images">
+        <div class="child">
+         
+          <h4>Card 1</h4>
+        </div>
+        <div class="child">
+          
+          <h4>Card 2</h4>
+        </div>
+        <div class="child">
+          
+          <h4>Card 3</h4>
+        </div>
+        <div class="child">
+          
+          <h4>Card 4</h4>
+        </div>
+        <div class="child">
+          
+          <h4>Card 5</h4>
+        </div>
+        <div class="child">
+          
+          <h4>Card 6</h4>
+        </div>
+        <div class="child">
+        
+          <h4>Card 7</h4>
+        </div>
+        <div class="child">
+         
+          <h4>Card 8</h4>
+        </div>
+        <div class="child">
+         
+          <h4>Card 9</h4>
+        </div>
+      </div>
+      <button class="right" id="button" onclick="rightScroll()">
+        <i class="fas fa-angle-double-right"></i>
+      </button>
+    </div>
+
+    <div class="cover">
+      <button class="left" id="button" onclick="leftScroll()">
+        <i class="fas fa-angle-double-left"></i>
+      </button>
+      <div class="scroll-images">
+        <div class="child">
+         
+          <h4>Card 1</h4>
+        </div>
+        <div class="child">
+          
+          <h4>Card 2</h4>
+        </div>
+        <div class="child">
+          
+          <h4>Card 3</h4>
+        </div>
+        <div class="child">
+          
+          <h4>Card 4</h4>
+        </div>
+        <div class="child">
+          
+          <h4>Card 5</h4>
+        </div>
+        <div class="child">
+          
+          <h4>Card 6</h4>
+        </div>
+        <div class="child">
+        
+          <h4>Card 7</h4>
+        </div>
+        <div class="child">
+         
+          <h4>Card 8</h4>
+        </div>
+        <div class="child">
+         
+          <h4>Card 9</h4>
+        </div>
+      </div>
+      <button class="right" id="button" onclick="rightScroll()">
+        <i class="fas fa-angle-double-right"></i>
+      </button>
+    </div>
+   
 </body>
 
 <script>
     var typed = new Typed('#wowpara', {
-        strings: ["war <span style= 'color:#8DC63F'>of</span> words '24 "],
-        typeSpeed: 50,
+        strings: ["w<span style= 'color:#8DC63F'>o</span>w '24" ,"war <span style= 'color:#8DC63F'>of</span> words '24 "],
+        typeSpeed:20,
+        backSpeed: 20,
+        smartBackspace: true,
+
+        
     });
 $(function () {
   $(document).scroll(function () {
@@ -65,5 +185,6 @@ $(function () {
   });
 });
    
+
   </script>
 </html>
