@@ -455,20 +455,7 @@ path.two {
   padding: 0px 30px;
   margin-top: 300px;
 }
-.regbtn{
-  cursor: pointer;
-  border:#F82249 solid;
-  width: 30%;
-  padding: 10px;
-  border-radius: 10px;
-  justify-content: center;
-}
-.regbtn a{
-  padding: 10px;
-  text-align: center;
-  color: white;
-  
-}
+
 .left {
   position: absolute;
   left: 0;
