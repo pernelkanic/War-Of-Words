@@ -1,73 +1,81 @@
-True Type Fonts: DIGITAL-7 version 1.02
+Raleway Variable Font
+=====================
 
+This download contains Raleway as both variable fonts and static fonts.
 
-EULA
--==-
-The fonts Digital-7 is freeware for home using.
+Raleway is a variable font with this axis:
+  wght
 
+This means all the styles are contained in these files:
+  Raleway-VariableFont_wght.ttf
+  Raleway-Italic-VariableFont_wght.ttf
 
-DESCRIPTION
--=========-
+If your app fully supports variable fonts, you can now pick intermediate styles
+that aren’t available as static fonts. Not all apps support variable fonts, and
+in those cases you can use the static font files for Raleway:
+  static/Raleway-Thin.ttf
+  static/Raleway-ExtraLight.ttf
+  static/Raleway-Light.ttf
+  static/Raleway-Regular.ttf
+  static/Raleway-Medium.ttf
+  static/Raleway-SemiBold.ttf
+  static/Raleway-Bold.ttf
+  static/Raleway-ExtraBold.ttf
+  static/Raleway-Black.ttf
+  static/Raleway-ThinItalic.ttf
+  static/Raleway-ExtraLightItalic.ttf
+  static/Raleway-LightItalic.ttf
+  static/Raleway-Italic.ttf
+  static/Raleway-MediumItalic.ttf
+  static/Raleway-SemiBoldItalic.ttf
+  static/Raleway-BoldItalic.ttf
+  static/Raleway-ExtraBoldItalic.ttf
+  static/Raleway-BlackItalic.ttf
 
-This font created specially for program Calculator-7 (download shareware version: http://www.styleseven.com/ and use 7 days fo free).
+Get started
+-----------
 
-The program Calculator-7 offers you the following possibilities:
-* calculate using seven operator: addition, subtraction, multiply, divide, percent, square root, 1 divide to X;
-* set decimal position (0, 2, 3, float) and round type (up, mathematical, down);
-* customize an appearance of work window: scale, fonts for digital panel and buttons, background color;
-* customize an appearance of number in digital panel: leading zero for decimal, thousand separator, decimal separator, digit grouping;
-* calculate total from clipboard (copy data to clipboard from table or text and press one button).
+1. Install the font files you want to use
 
+2. Use your app's font picker to view the font family and all the
+available styles
 
-Files in digital-7_font.zip:
-       	readme.txt     			this file;
-        digital-7.ttf    		digital-7 regular font;
-	digital-7 (italic).ttf 		digital-7 italic font;
-	digital-7 (mono).ttf    	digital-7 mono font;
-	digital-7 (mono italic).ttf    	digital-7 mono font.
+Learn more about variable fonts
+-------------------------------
 
-Please visit http://www.styleseven.com/ for download our other products as freeware as shareware.
-We will welcome any useful suggestions and comments; please send them to ms-7@styleseven.com
+  https://developers.google.com/web/fundamentals/design-and-ux/typography/variable-fonts
+  https://variablefonts.typenetwork.com
+  https://medium.com/variable-fonts
 
+In desktop apps
 
-FREEWARE USE (NOTES)
--=================-
-Also you may: 
- * Use the font in freeware software (credit needed);
- * Use the font for your education process.
+  https://theblog.adobe.com/can-variable-fonts-illustrator-cc
+  https://helpx.adobe.com/nz/photoshop/using/fonts.html#variable_fonts
 
+Online
 
-COMMERCIAL OR BUSINESS USE
--========================-
+  https://developers.google.com/fonts/docs/getting_started
+  https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide
+  https://developer.microsoft.com/en-us/microsoft-edge/testdrive/demos/variable-fonts
 
-You can buy font for commercial use here ($24.95): http://store.esellerate.net/s.aspx?s=STR0331655240
-You may:
- * Include the font to your installation;
- * Use one license up to 100 computers in your office.
-Please contact us for any questions.
+Installing fonts
 
+  MacOS: https://support.apple.com/en-us/HT201749
+  Linux: https://www.google.com/search?q=how+to+install+a+font+on+gnu%2Blinux
+  Windows: https://support.microsoft.com/en-us/help/314960/how-to-install-or-remove-a-font-in-windows
 
-WHAT IS NEW?
--==========-
+Android Apps
 
- Version 1.01 April 05 2009
- --------------------------
-  * Change Typeface name for fonts "Digital-7 (mono)" and "Digital-7 (italic)" (now available all fonts for select in application, for example Word Pad).
-  * Corrected symbol ':'.
+  https://developers.google.com/fonts/docs/android
+  https://developer.android.com/guide/topics/ui/look-and-feel/downloadable-fonts
 
- Version 1.01 April 07 2011
- --------------------------
-   * Embedding is allowed.
+License
+-------
+Please read the full license text (OFL.txt) to understand the permissions,
+restrictions and requirements for usage, redistribution, and modification.
 
- Version 1.1 June 07 2013
- --------------------------
-   * Mono Italic font is added.
+You can use them in your products & projects – print or digital,
+commercial or otherwise.
 
-
-AUTHOR
--====-
-
-Sizenko Alexander
-Style-7
-http://www.styleseven.com
-Created: October 7 2008
+This isn't legal advice, please consider consulting a lawyer and see the full
+license for all details.
