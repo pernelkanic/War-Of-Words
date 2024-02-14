@@ -540,9 +540,9 @@ p {
 
 .containerabt .cardabt .face.face1{
   position: relative;
-  background: url('../Assets/shipanti.jpg');
+  background-color: #F82249;
   display: flex;
-  filter: blur(0.6px);
+ 
   justify-content: center;
   align-items: center;
   z-index: 1;
@@ -575,7 +575,9 @@ font-family: "raleway";
   text-align: center;
   font-size: 1.5em;
 }
-
+.thumb{
+ background-size: contain;
+}
 .containerabt .cardabt .face.face2{
   position: relative;
   background: #fff;
@@ -690,7 +692,7 @@ font-family: "raleway";
 
 .gallery{
  margin-top: 4em;
- height: 38em;
+ height: 40em;
 }
 .sampleabt{
   margin-top: 14em;
@@ -850,10 +852,11 @@ article.card:hover ::-webkit-scrollbar-thumb {
 .coordgallery {
   display: flex;
   margin-left: 10em;
+  margin-top: 7em;
   justify-content: center;
   align-items: center;
   align-content: center;
-  
+  height: 35em;
 gap: 4vw  ;
 }
 .pmh {
@@ -913,15 +916,16 @@ gap: 4vw  ;
 .atriumgallery{
 
   display: flex;
- 
-  margin-left: 0.5em;
+
+  margin-left: 3.5em;
   flex: 1;
   height: 40em;
-  gap: 1.3vw;
+ 
   overflow: scroll;
   
 
 }
+
 .atriumgal  img {
   object-fit: cover;
 
@@ -960,7 +964,6 @@ article.atriumcard {
    
     height: 440px;
     background: url("../Assets/Lawyer_Up.jpg") ;
-    background-position: 50%;
     
     background-size:cover;
     background-repeat: no-repeat;
