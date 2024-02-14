@@ -727,6 +727,7 @@ article.card .thumb {
   background-size:cover;
   background-repeat: no-repeat;
   border-radius: 3px;
+
 }
 .article.title{
   padding: 7px 7px 7px 7px;
@@ -814,7 +815,7 @@ article.card .infos .details {
 article.card:hover .infos {
   transform: translateY(-460px);
   background-color: #fff;
- overflow: scroll;
+ overflow-y: scroll
 }
 article.card:hover   .infos .seats, article.card:hover .infos .txt, article.card:hover .eventtitle .infos  .details {
   color: #000 !important;
@@ -846,3 +847,215 @@ article.card:hover ::-webkit-scrollbar-thumb {
   border-radius: 20px;       /* roundness of the scroll thumb */
      /* creates padding around scroll thumb */
 }
+.coordgallery {
+  display: flex;
+  margin-left: 10em;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  
+gap: 4vw  ;
+}
+.pmh {
+  margin-top: 70px;
+}
+
+.coordgallery  img {
+  object-fit: cover;
+  width: 21rem;
+  height: 30rem;
+
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #1381fe,
+    0 0 0.8rem #1381fe, 0 0 2.8rem #1381fe;
+}
+
+.imgcont {
+  margin: 40px;
+  position: relative;
+  overflow: hidden;
+  border-style: solid;
+  border-radius: 10px;
+  box-shadow: 50px 50px 50px rgba(145, 92, 182, 0.4);
+}
+
+.imgtext {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  opacity: 1;
+  color: white;
+  background-color: black;
+  
+  background: black;
+  text-align: center;
+  padding: 1rem;
+  overflow: hidden;
+  transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.img:hover {
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #1381fe,
+    0 0 0.8rem #1381fe, 0 0 2.8rem #1381fe, inset 0 0 1.3rem #1381fe;
+}
+
+#gallery {
+  color: white;
+  text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+    0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+}
+.coordinator-container{
+  background-color: #e3f2fc;
+  padding-top: 2em;
+}
+.coordinator-container h1{
+  font-family:"trajan-pro";
+}
+.atriumgallery{
+
+  display: flex;
+ 
+  margin-left: 0.5em;
+  flex: 1;
+  height: 40em;
+  gap: 1.3vw;
+  overflow: scroll;
+  
+
+}
+.atriumgal  img {
+  object-fit: cover;
+
+  height: 30rem;
+
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #1381fe,
+    0 0 0.8rem #1381fe, 0 0 2.8rem #1381fe;
+}
+.atriumcoretitl{
+  text-align: left;
+  margin-top: 1em;
+
+  margin-left: 1.4em;
+}
+.coordabt{
+    
+    margin-top: 14em;
+  
+}
+article.atriumcard {
+  margin-top: 8em;
+    
+  
+   display: block;;
+    width: 350px;
+    height: 500px;
+    transform: translate(-50%, -50%) translateZ(0);
+    border-radius: 3px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .3);
+    overflow:hidden;
+   
+  }
+  article.atriumcard .thumb {
+    width: 100%;
+    
+   
+    height: 440px;
+    background: url("../Assets/Lawyer_Up.jpg") ;
+    background-position: 50%;
+    
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+  
+  }
+  .article.title{
+    padding: 7px 7px 7px 7px;
+  }
+  article.atriumcard .infos {
+    width: auto;
+    height: 500px;
+    position: relative;
+    padding: 0.6em 0px 0px 7px ;
+    background: #000000;
+  
+    transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+  }
+  article.atriumcard .infos .eventtitle {
+    position: relative;
+    margin: 10px 4px 0px 0px ;
+    text-align: center;
+    letter-spacing: 3px;
+    color: #ffffff;
+    background-color: #000;
+    font-family: 'Grotesque Black', sans-serif;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 0px #000000;
+  }
+  article.atriumcard .infos .flag {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-2%);
+    width: 35px;
+    height: 40em;
+  
+    background-size: 100% auto;
+    display: inline-block;
+  }
+  article.atriumcard .infos .date, article.card .infos .seats {
+    
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    
+    font-family: 'Grotesque', sans-serif;
+  }
+  article.atriumcard .infos .seats {
+    display: inline-block;
+    background-color: #000;
+    padding-top: 11px;
+    
+    text-align: center;
+    font-size: large;
+    padding-right: 0.4em;
+
+    color: white;
+    opacity: 1;
+    transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+  }
+  .infos hr{
+    width: 90%;
+    
+    margin-left: 1em;
+  }
+  .rules p{
+    font-family: 'raleway';
+  } 
+  article.atriumcard .infos .txt {
+    font-family: 'Merriweather', 'raleway',sans-serif;
+    line-height: 2;
+    font-size: 0.95rem;
+    color: white;
+    opacity: 1;
+
+  }
+  article.atriumcard .infos .details {
+
+    
+    left: 0em;
+    bottom: 0;
+    margin: 10px 0 ;
+    
+    letter-spacing: 1px;
+    color: white;
+    font-family: 'Grotesque Black', sans-serif;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    opacity: 0;
+   
+  }
+  article.atriumcard:hover .infos {
+    transform: translateY(-24px);
+    background-color: #000000;
+   overflow-y: hidden
+  }
