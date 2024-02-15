@@ -439,7 +439,7 @@ path.two {
   background-color: rgb(242, 249, 254);
   margin-left: 0em;
   padding-left: 0.5em;
-  
+
 }
 
 .left {
@@ -1056,6 +1056,19 @@ article.atriumcard {
   .rules p{
     font-family: 'raleway';
   } 
+  .roadmap{
+    padding-top: 4em;
+    height: 50em;
+    background-color: #e4f1fb;
+  }
+  .roadmap h1{
+    font-family: 'trajan-pro';
+  }
+  .roadmap img{
+    margin-top: 2em;
+    width: 60em;
+    margin-left: 19em;
+  }
   article.atriumcard .infos .txt {
     font-family: 'Merriweather', 'raleway',sans-serif;
     line-height: 2;
@@ -1162,21 +1175,127 @@ height: 40em;
   ul {
     list-style: none;
   }  
+   /* no circle */
+ .flickity-button {
+    
+  background: transparent;
+}
+.flickity-button:hover {
+    
+  background: transparent;
+  color: black;
+}
+
+.flickity-prev-next-button {
+  width: 100px;
+  height: 100px;
+}
+.flickity-button-icon {
+  fill: white;
+}
+.flickity-button:disabled {
+  display: none;
+}
+    
+.carousel {
+  font-family: Arial, Helvetica, sans-serif;
+  margin:auto;
+  width: 80em;
+  height: 400px;
+  border-radius: 20%;
+}
+.carousel-cell {
+  margin-top: 35px;
+  margin-right: 35px;
+  margin-bottom: 35px;
+  float: right;
+  max-width: 360px;
+  width: 60%;
+  height: 401px;
+  border-radius: 15px;
+  counter-increment: carousel-cell;
+  transition: all .3s ease;
+  opacity: 0.3;
+  background: #b9b9b9;
+  filter: blur(6px);
+  
+}
+  .carousel-cell.is-selected {
+    filter: blur(0);
+    opacity: 1;
+    background: white ;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+    
+    /* name */
+.carousel-cell .n {
+  font-size: 18px;
+  margin-top: 15px;
+  text-align: center;
+  color:black;
+  counter-increment: carousel-cell;
+}
+    
+    /* button */
+.carousel-cell .b {
+  cursor: pointer;
+  margin: auto;
+  width: 180px;
+  padding: 1px;
+ 
+  border-radius: 15px;
+  font-size: 15px;
+  color: black;
+  text-align: center;
+  counter-increment: carousel-cell;
+  transition: all .3s ease;
+}
+
+ /* picture */
+.carousel-cell .p {
+  margin-top: 28px;
+  border-radius: 15px;
+  width: 252px;
+height: 258px;
+  
+  counter-increment: carousel-cell;
+  object-fit: cover;
+ 
+}
+    
+.carousel-cell .b:hover {
+ 
+  transform: scale(1.03);
+  font-size: 16px;
+}
+    
+.carousel-cell .b:active {
+  background: white;
+  color: green;
+  transform: scale(0.9);
+  font-size: 16px;
+}
+    
+
+    
 
   @media only screen and (max-width: 600px)  {
+    html, body {overflow-x: hidden;}
     .toppage{
-    
+     
       background-repeat: no-repeat  ;
       background-size: cover;
-      
+ 
       height: 50em;
   
     }
   
     .stroke img{
       padding-top: 1em;
-      width: 70px;
+      width: 100px;
       height: 70px;
+   
     }
     .wowlogo{
       width: 6em;
@@ -1313,14 +1432,14 @@ height: 40em;
     
     display: flex;
     
-    justify-content: flex-start;
+    justify-content: space-between;
     gap: 6vh;
-    margin-left: 1.6em;
+    margin-left: 1em;
   }
   
   .date-box {
     
-    min-width: 190px;
+    min-width: 90px;
     line-height: 1;
     padding-top: 67px;
     display: flex;
@@ -1333,7 +1452,7 @@ height: 40em;
     letter-spacing: 1px;
     text-decoration: none;
     border-radius: 18px;
-  
+    margin-top: 3em;
     
     color: rgba(255, 255, 255, 1);
     transition: all 0.2s linear;
@@ -1347,12 +1466,19 @@ height: 40em;
   }
   #countdown{
     margin-bottom: 0px !important;
+    height: 80px;
+    overflow: hidden;
+  }
+  .bodytitle-container img{
+    display: none;
   }
   .bodytitle-container{
     
     display: flex;
     align-items: center;
-    justify-content: center;
+    margin-left: 0.5em;
+
+    justify-content:flex-start;
     
   }
   .title-regcont{
@@ -1375,15 +1501,17 @@ height: 40em;
   #wowpara{
     margin-left: 0em;
     color: white;
-  font-size: 1.5em;
-  
+  font-size: 2em;
+
   }
-  
+  .roadmapimg{
+    width: 10px;
+  }
   .rest{
     background-color: #fff;
   }
   .wrapper {
-    padding-top: 1em;
+    padding-top: 4em;
     
     display: flex;
     justify-content: center;
@@ -1393,10 +1521,10 @@ height: 40em;
   .cta {
     
       display: flex;
-
+      padding: 10px 10px 10px 16px;
       text-decoration: none !important;
       font-family: 'Poppins', sans-serif;
-      font-size: 18px;
+      font-size: 14px;
       align-items: center;
       color: white;
     border: #F82249 solid;
@@ -1485,7 +1613,7 @@ height: 40em;
     background-color: rgb(242, 249, 254);
     margin-left: 0em;
     padding-left: 0.5em;
-    
+   
   }
   
   .left {
@@ -1544,11 +1672,292 @@ height: 40em;
     cursor: pointer;
     font-size: 25px;
   }
+  .abt-container{
+    padding: 2em;
+    margin-top: 5em;
+    background-color: aliceblue;
+  }
+  .abt-container p{
   
+    font-size: 1.4em;
+  }
+  .containerabt{
+    display: flex;
+    flex-direction: column;
+    
+   
+    margin-top: 0em;
+    
+    padding-bottom: 2em;
+    
+   
+  }
+  .cardabt{
+    padding-top: 2em;
+  }
+  .containerabt h1 {
+    font-weight: 700;
+    font-size: 3em;
+    font-family: "raleway";
+    padding-top: 0em;
   }
   
-
- /* no circle */
+  .containerabt .cardabt{
+    
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .containerabt .cardabt .face{
+    border-radius:1px;
+    width: 300px;
+    height: 400px;
+    transition: 0.5s;
+  }
+  
+  .containerabt .cardabt .face.face1{
+    position: relative;
+    background-color: #F82249;
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+  }
+  
+  .containerabt .cardabt:hover .face.face1{
+    background: #ff0057;
+    transform: translateY(0);
+  }
+  
+  .containerabt .cardabt .face.face1 .content{
+    
+    transition: 0.5s;
+  }
+  
+  .containerabt .cardabt:hover .face.face1 .content{
+    opacity: 1;
+  }
+  
+  .containerabt .cardabt .face.face1 .content img{
+    max-width: 100px;
+  }
+  
+  .containerabt .cardabt .face.face1 .content h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: white;
+  font-family: "raleway";
+    text-align: center;
+    font-size: 1.5em;
+  }
+  .thumb{
+   background-size: contain;
+  }
+  .containerabt .cardabt .face.face2{
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-300px);
+  }
+  
+  .containerabt .cardabt:hover .face.face2{
+    transform: translateY(0);
+  }
+  
+  .containerabt .cardabt .face.face2 .content p{
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+  }
+  
+  .containerabt .cardabt .face.face2 .content a{
+    margin: 15px 0 0;
+    display:  inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #ffffff;
+    padding: 5px;
+    border: 1px solid #333;
+  }
+  
+  .containerabt .cardabt .face.face2 .content a:hover{
+    background: #333;
+    color: #fff;
+  }
+  .gallery{
+    margin-top: 4em;
+    overflow: scroll;
+   
+   }
+   .sampleabt{
+     margin-top: 14em;
+     margin-left: 1em;
+     width: 100%
+   }
+   .note {
+     
+     color: #fff;
+     font-size: 1rem;
+     font-family: 'Merriweather', sans-serif;
+     line-height: 1.5;
+     text-align: center;
+   }
+   article.card {
+   margin-top: 5em;
+     left: 50%;
+     overflow: hidden;
+    display: block;;
+     width:250px;
+     height: 400px;
+     transform: translate(-50%, -50%) translateZ(0);
+     border-radius: 3px;
+     box-shadow: 0 1px 4px rgba(0, 0, 0, .3);
+     
+   
+   }
+   article.card .thumb {
+     
+     
+    
+     height: 344px;
+     width: 100%;
+     background: url("../Assets/Lawyer_Up.jpg") ;
+     background-position: 50%;
+     
+     background-size:cover;
+     background-repeat: no-repeat;
+     border-radius: 3px;
+   
+   }
+   .article.title{
+     padding: 7px 7px 7px 7px;
+   }
+   article.card .infos {
+     width: auto;
+     height: 100%;
+     position: relative;
+     padding: 0.6em 0px 0px 7px ;
+     background: #ffffff;
+   
+     transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+   }
+   article.card .infos .eventtitle {
+     position: relative;
+     margin: 10px 4px 0px 0px ;
+     text-align: center;
+     letter-spacing: 3px;
+     color: #000000;
+     font-family: 'Grotesque Black', sans-serif;
+     font-size: 0.7rem;
+     text-transform: uppercase;
+     text-shadow: 0 0 0px #000000;
+   }
+   article.card .infos .flag {
+     position: absolute;
+     top: 50%;
+     right: 0;
+     transform: translateY(-100%);
+     width: 35px;
+     height: 40em;
+   
+     background-size: 100% auto;
+     display: inline-block;
+   }
+   article.card .infos .date, article.card .infos .seats {
+     
+     text-transform: uppercase;
+     font-size: 0.85rem;
+     
+     font-family: 'Grotesque', sans-serif;
+   }
+   article.card .infos .seats {
+     display: inline-block;
+   
+     padding-top: 17px;
+     padding-left: 4em;
+     
+     
+     opacity: 0;
+     transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+   }
+   .infos hr{
+     width: 90%;
+     
+     margin-left: 1em;
+   }
+   .rules p{
+     font-family: 'raleway';
+   } 
+   article.card .infos .txt {
+     font-family: 'Merriweather', 'raleway',sans-serif;
+     line-height: 2;
+     font-size: 0.95rem;
+     color: white;
+     opacity: 0;
+     transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+   }
+   article.card .infos .details {
+     position: absolute;
+     left: 0;
+     left: 0;
+     bottom: 0;
+     margin: 10px 0;
+     
+     letter-spacing: 1px;
+     color: white;
+     font-family: 'Grotesque Black', sans-serif;
+     font-size: 0.9rem;
+     text-transform: uppercase;
+     cursor: pointer;
+     opacity: 0;
+     transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+   }
+   article.card:hover .infos {
+     transform: translateY(-350px);
+     background-color: #fff;
+    overflow-y: scroll
+   }
+   article.card:hover   .infos .seats, article.card:hover .infos .txt, article.card:hover .eventtitle .infos  .details {
+     color: #000 !important;
+     opacity: 1;
+   
+   }
+   .article.card::after{
+     color: #000;
+   }
+   article.card:hover ::-webkit-scrollbar {
+     width: 6px;               /* width of the entire scrollbar */
+   }
+   
+   article.card:hover ::-webkit-scrollbar-track {
+           /* color of the tracking area */
+   }
+   
+   article.card:hover ::-webkit-scrollbar-thumb {
+     background-color: #C1C1C1 ; /* color of the scroll thumb */
+     border-radius: 20px;       /* roundness of the scroll thumb */
+        /* creates padding around scroll thumb */
+   }
+   .roadmap img{
+    width: 10%;
+   }
+   .gallery ::-webkit-scrollbar-track {
+     background-color: #C1C1C1 ; /* color of the scroll thumb */
+     border-radius: 20px;   
+   } 
+   .gallery ::-webkit-scrollbar-thumb {
+     background-color: #C1C1C1 ; /* color of the scroll thumb */
+     border-radius: 20px;       /* roundness of the scroll thumb */
+        /* creates padding around scroll thumb */
+   }
+   /* no circle */
  .flickity-button {
     
   background: transparent;
@@ -1573,7 +1982,7 @@ height: 40em;
 .carousel {
   font-family: Arial, Helvetica, sans-serif;
   margin:auto;
-  width: 80em;
+  width: 100%;
   height: 400px;
   border-radius: 20%;
 }
@@ -1629,7 +2038,7 @@ height: 40em;
 .carousel-cell .p {
   margin-top: 28px;
   border-radius: 15px;
-  width: 252px;
+  width: 150px;
 height: 258px;
   
   counter-increment: carousel-cell;
@@ -1650,8 +2059,10 @@ height: 258px;
   font-size: 16px;
 }
     
+  }
+  
 
-    
+
 
   
   
