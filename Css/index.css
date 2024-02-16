@@ -433,7 +433,39 @@ path.two {
 }
 
 
+::-webkit-scrollbar {
+  
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px white;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:rgb(168, 167, 167);
+  border-radius: 10px;
+}
 .cover {
   position: relative;
   background-color: rgb(242, 249, 254);
@@ -521,7 +553,7 @@ p {
 .abt-container{
   padding: 2em;
   margin-top: 5em;
-  background-color: aliceblue;
+  background: linear-gradient(to bottom, #1C1A22 50% , aliceblue);
 }
 .abt-container p{
 
@@ -715,7 +747,9 @@ font-family: "raleway";
 .gallery{
  margin-top: 4em;
  height: 40em;
+ overflow-y: hidden;
 }
+
 .sampleabt{
   margin-top: 14em;
 }
@@ -812,6 +846,45 @@ article.card .infos .seats {
 .rules p{
   font-family: 'raleway';
 } 
+/* CSS */
+.button-24 {
+  display: flex;
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  margin-left: 6em;
+  outline: 0;
+  align-items: center;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button-24:hover,
+.button-24:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.button-24:active {
+  opacity: .5;
+}
 article.card .infos .txt {
   font-family: 'Merriweather', 'raleway',sans-serif;
   line-height: 2;
@@ -862,11 +935,11 @@ article.card:hover ::-webkit-scrollbar-thumb {
   border-radius: 20px;       /* roundness of the scroll thumb */
      /* creates padding around scroll thumb */
 }
-.gallery ::-webkit-scrollbar-track {
+.cover::-webkit-scrollbar-track {
   background-color: #C1C1C1 ; /* color of the scroll thumb */
   border-radius: 20px;   
 } 
-.gallery ::-webkit-scrollbar-thumb {
+.cover::-webkit-scrollbar-thumb {
   background-color: #C1C1C1 ; /* color of the scroll thumb */
   border-radius: 20px;       /* roundness of the scroll thumb */
      /* creates padding around scroll thumb */
@@ -1066,8 +1139,8 @@ article.atriumcard {
   }
   .roadmap img{
     margin-top: 2em;
-    width: 60em;
-    margin-left: 19em;
+    width: 70em;
+    margin-left: 14em;
   }
   article.atriumcard .infos .txt {
     font-family: 'Merriweather', 'raleway',sans-serif;
@@ -1105,11 +1178,11 @@ height: 40em;
 }
 
   .footer {
-    background-color: #24262b;
+    background-color: #000000;
     padding: 70px 0;
   }
   .footer-col {
-    width: 25%;
+    width: 20%;
     padding: 0 15px;
   }
   .footer-col h4 {
@@ -1134,12 +1207,12 @@ height: 40em;
     margin-bottom: 10px;
   }
   .footer-col ul li a {
-    font-size: 16px;
+    font-size: 30px;
     text-transform: capitalize;
     color: #ffffff;
     text-decoration: none;
     font-weight: 300;
-    color: #523d3d;
+    color: #a19999;
     display: block;
     transition: all 0.3s ease;
   }
@@ -1163,7 +1236,9 @@ height: 40em;
     color: #24262b;
     background-color: #ffffff;
   }
-  
+  .footer-col li{
+    width: 10;
+  }
   .footercon {
     max-width: 1170px;
     margin: auto;
@@ -1230,7 +1305,8 @@ height: 40em;
     
     /* name */
 .carousel-cell .n {
-  font-size: 18px;
+  font-size: 20px;
+  font-family: 'raleway';
   margin-top: 15px;
   text-align: center;
   color:black;
@@ -1245,8 +1321,9 @@ height: 40em;
   padding: 1px;
  
   border-radius: 15px;
-  font-size: 15px;
+  font-size: 18px;
   color: black;
+  font-family: 'raleway';
   text-align: center;
   counter-increment: carousel-cell;
   transition: all .3s ease;
@@ -1256,9 +1333,10 @@ height: 40em;
 .carousel-cell .p {
   margin-top: 28px;
   border-radius: 15px;
-  width: 252px;
-height: 258px;
-  
+  width: 219px;
+height: 271px;
+  margin-left: 4.4em;
+
   counter-increment: carousel-cell;
   object-fit: cover;
  
@@ -1267,7 +1345,7 @@ height: 258px;
 .carousel-cell .b:hover {
  
   transform: scale(1.03);
-  font-size: 16px;
+  font-size: 20px;
 }
     
 .carousel-cell .b:active {
@@ -1364,7 +1442,10 @@ height: 258px;
       transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
     
     }
-
+    .button-24{
+      width:50%;
+      margin-left: 3em;
+    }
     .button {
       border: 1px solid #B51226;
       padding:2px;
@@ -1452,7 +1533,7 @@ height: 258px;
     letter-spacing: 1px;
     text-decoration: none;
     border-radius: 18px;
-    margin-top: 3em;
+    margin-top: 1em;
     
     color: rgba(255, 255, 255, 1);
     transition: all 0.2s linear;
@@ -1496,9 +1577,11 @@ height: 258px;
     width:10%
   }
   .typed-cursor {
-  font-size: 1em;
+  margin-top: 1em;
+  font-size: 2em;
   }
   #wowpara{
+    margin-top: 2em;
     margin-left: 0em;
     color: white;
   font-size: 2em;
@@ -1524,7 +1607,7 @@ height: 258px;
       padding: 10px 10px 10px 16px;
       text-decoration: none !important;
       font-family: 'Poppins', sans-serif;
-      font-size: 14px;
+      font-size: 20px;
       align-items: center;
       color: white;
     border: #F82249 solid;
@@ -1684,7 +1767,7 @@ height: 258px;
   .containerabt{
     display: flex;
     flex-direction: column;
-    
+    margin-left: 1.1em;
    
     margin-top: 0em;
     
@@ -1793,9 +1876,18 @@ height: 258px;
   }
   .gallery{
     margin-top: 4em;
-    overflow: scroll;
+    
    
    }
+   .gallery::-webkit-scrollbar-track {
+    background-color: #C1C1C1 ; /* color of the scroll thumb */
+    border-radius: 20px;   
+  } 
+  .gallery::-webkit-scrollbar-thumb {
+    background-color: #C1C1C1 ; /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+       /* creates padding around scroll thumb */
+  }
    .sampleabt{
      margin-top: 14em;
      margin-left: 1em;
@@ -1945,8 +2037,13 @@ height: 258px;
      border-radius: 20px;       /* roundness of the scroll thumb */
         /* creates padding around scroll thumb */
    }
+   .roadmap{
+    height: 46em;
+   }
    .roadmap img{
-    width: 10%;
+    width: 100%;
+    margin-top: 10em;
+    margin-left: 0em;
    }
    .gallery ::-webkit-scrollbar-track {
      background-color: #C1C1C1 ; /* color of the scroll thumb */
@@ -2036,16 +2133,17 @@ height: 258px;
 
  /* picture */
 .carousel-cell .p {
+  
   margin-top: 28px;
   border-radius: 15px;
   width: 150px;
 height: 258px;
-  
+  margin-left: 3em;
   counter-increment: carousel-cell;
   object-fit: cover;
  
 }
-    
+
 .carousel-cell .b:hover {
  
   transform: scale(1.03);
@@ -2061,7 +2159,18 @@ height: 258px;
     
   }
   
-
+/*responsive*/
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
 
 
   
